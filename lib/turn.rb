@@ -36,6 +36,7 @@ def turn(board)
   user_input = gets.strip
   until input_to_index(user_input) == valid_move?
   if input_to_index(user_input) == valid_move?
+    display_board
     move(board, position_selection, current_player = "X")
     end
   end
