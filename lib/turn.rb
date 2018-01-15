@@ -11,7 +11,7 @@ def display_board(board)
  def move(board, input.to_i -1, current_player = "X")
    board[position_selection] = current_player
  end
- 
+
  def position_taken?(board, index)
    if board[index] != ("X") && board[index] != ("O")
      return false
@@ -19,7 +19,7 @@ def display_board(board)
      return true
    end
  end
- 
+
  def valid_move?(board, index)
   if index.between?(0, 8) && !(position_taken?(board, index))
     return true
