@@ -8,7 +8,7 @@ def display_board(board)
  def input_to_index(input)
   user_input.to_i - 1
  end
- def move(board, input.to_i -1, current_player = "X")
+ def move(board, input - 1, current_player = "X")
    board[position_selection] = current_player
  end
 
