@@ -33,5 +33,3 @@ def display_board(board)
       return false
   end
 end
-
-
