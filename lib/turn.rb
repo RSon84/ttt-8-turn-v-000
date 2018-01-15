@@ -11,7 +11,7 @@ def display_board(board)
   user_input.to_i - 1
  end
 
- def move(board, position_selection, current_player = "X")
+ def move(board, input_to_index(user_input), current_player = "X")
    board[position_selection] = current_player
  end
 
@@ -38,7 +38,7 @@ def turn(board)
   until input_to_index(user_input) == valid_move?(board, index)
   if input_to_index(user_input) == valid_move?(board, index)
     display_board(board)
-    move(board, position_selection, current_player = "X")
+    move(board, user_input, current_player = "X")
     end
   end
 end
