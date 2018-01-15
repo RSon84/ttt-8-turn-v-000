@@ -11,7 +11,7 @@ def display_board(board)
   user_input.to_i - 1
  end
 
- def move(board, input_to_index(user_input), current_player = "X")
+ def move(board, input_to_index, current_player = "X")
    board[position_selection] = current_player
  end
 
